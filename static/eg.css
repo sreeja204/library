@@ -1,0 +1,309 @@
+/* General navbar styles */
+.navbar {
+  background-color: #f8f9fa; /* Light grey background */
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+  color: #007bff;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.logo img {
+  max-width: 120px;
+  height: auto;
+}
+
+/* Navbar links */
+.nav-link {
+  color: #333;
+  font-size: 1rem;
+  margin-right: 15px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.nav-link.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu .dropdown-item {
+  font-size: 0.9rem;
+  color: #333;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Signup button */
+/* Styling for the signup button container */
+.signup-button {
+    text-align: center; /* Center-align the button */
+    margin-top: 20px; /* Add spacing above the button */
+}
+
+/* Styling for the button itself */
+.btn-signup {
+    display: inline-block; /* Allows margin and padding */
+    background-color: #007BFF; /* Primary blue color */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Adjust font size */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+/* Hover effect */
+.btn-signup:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* Active state */
+.btn-signup:active {
+    background-color: #003f7f; /* Even darker blue for active state */
+    transform: scale(0.98); /* Slightly shrink on click */
+}
+
+/* For better responsiveness */
+.btn-signup:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.8); /* Highlight on focus */
+}
+
+
+
+
+
+
+
+
+/* bannner */
+
+
+
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.banner-text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+
+#quotation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem; /* Adjust padding as needed */
+  text-align: center;
+  background-color:rgb(179, 176, 176); /* Optional background color */
+}
+
+#quotation .inner-content {
+  max-width: 600px; /* Limit content width */
+  margin: 0 auto;
+}
+
+#quotation .section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333; /* Adjust color if needed */
+}
+
+#quotation blockquote {
+  font-style: italic;
+  color: #555;
+  margin: 0;
+  padding: 1rem;
+  border-left: 4px solid #ccc; /* Optional quote styling */
+}
+
+#quotation blockquote q {
+  font-size: 1.5rem;
+}
+
+#quotation .author-name {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #666;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+#download-app {
+  position: relative;
+  padding: 60px 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* Overlay Patterns */
+.leaf-pattern-overlay {
+  background: url('images/leaf-pattern.png') no-repeat center center/cover;
+}
+
+.corner-pattern-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/corner-pattern.png') no-repeat top left/cover;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+/* Container Styling */
+#download-app .container {
+  position: relative;
+  z-index: 2;
+}
+
+.app-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.divider {
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.app-info p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.google-app {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.google-app img {
+  max-width: 150px;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.google-app img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.single-image {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #download-app {
+      padding: 40px 20px;
+  }
+
+  .google-app {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .google-app img {
+      max-width: 200px;
+  }
+
+  .single-image {
+      margin-bottom: 20px;
+  }
+}
